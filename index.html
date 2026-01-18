@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Kiplagat | Software Developer</title>
+
+    <style>
+        /* ---------------- CSS ---------------- */
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #020617;
+            color: #e5e7eb;
+            text-align: center;
+        }
+
+        header {
+            min-height: 30vh; /* half size header */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6366f1, #22d3ee);
+            color: white;
+            padding: 20px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2rem; /* smaller header */
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1rem;
+            max-width: 500px; /* narrower for balance */
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            animation: fadeUp 1s ease-in-out;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #0f172a;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            background: #2563eb;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #020617;
+            border: 1px solid #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        a button {
+            padding: 14px 24px;
+            border: none;
+            border-radius: 30px;
+            background: #22d3ee;
+            color: #020617;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        a button:hover {
+            background: #38bdf8;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #020617;
+            padding: 25px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        
+        @media (max-width: 600px) {
+            header {
+                min-height: 25vh;
+                padding: 15px 10px;
+            }
+            header h1 {
+                font-size: 1.6rem;
+            }
+            header p {
+                font-size: 0.9rem;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Caleb Kiplagat</h1>
+    <p>
+        Software Developer | Web & Android Applications | Java, Python, SQL, Git
+    </p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I design and develop <strong>robust, scalable, and user-focused applications</strong> 
+            for web and mobile platforms. My expertise includes Java, Android development, web technologies, 
+            and database management. I aim to deliver solutions that solve real-world problems efficiently while continuously improving my craft.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">Java (OOP, Collections, Concurrency)</div>
+        <div class="skill">Android Development (Activities, Layouts, Intents, APIs)</div>
+        <div class="skill">JavaScript, HTML & CSS</div>
+        <div class="skill">Python</div>
+        <div class="skill">SQL & Databases (MySQL, SQLite)</div>
+        <div class="skill">Graphic Design</div>
+        <div class="skill">Algorithm & data Structures</div>
+    </div>
+</section>
+
+<section>
+    <h2>Goals</h2>
+    <div class="card">
+        <p>
+            My goal is to work on <strong>impactful software projects</strong>, collaborate with innovative teams, 
+            and contribute to creating efficient solutions that improve real-world workflows and user experiences.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact Me</h2>
+    <p>Let’s connect and collaborate on exciting projects </p>
+
+    <div class="contact-buttons">
+        <a href="https://github.com/kiiplagat" target="_blank"><button>GitHub</button></a>
+        <a href="https://twitter.com/_kiplagat_" target="_blank"><button>Twitter</button></a>
+        <a href="https://wa.me/254747914882" target="_blank"><button>WhatsApp</button></a>
+        <a href="mailto:smarttech0254@gmail.com"><button>Email</button></a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Kiplagat • 💻
+</footer>
+
+<script>
+    // ---------------- JS ----------------
+    console.log("Welcome to Caleb Kiplagat's Portfolio 🚀");
+</script>
+
+</body>
+</html>
